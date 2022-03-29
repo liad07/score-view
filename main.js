@@ -8,3 +8,8 @@ document.getElementById("text").innerText=str;
 function back() {
     location.replace("https://liad07.github.io/king-of-the-hamuzim/")
 }
+function sharewithme(){
+    var link="mailto:liadgames@gmail.com?subject=i%20want%20to%20share%20with%20you%20my%20record&body=my record is: "+x;
+    location.replace(link)
+
+}
