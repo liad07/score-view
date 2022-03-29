@@ -5,3 +5,6 @@ index += 1;
 var x = url.href.substring(index);
 var str="the score is "+x;
 document.getElementById("text").innerText=str;
+function back() {
+    location.replace("https://liad07.github.io/king-of-the-hamuzim/")
+}
