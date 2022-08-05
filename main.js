@@ -12,7 +12,7 @@ fetch(from)
         var link = parsedResponse.head.getElementsByTagName("link")[0].href.replace(window.location.origin, from)
         link = link.replace("/score-view/", "")
         document.getElementById("icon").href = link
-        document.title = parsedResponse.title
+        document.title = parsedResponse.title.toLowerCase()
     });
 document.getElementById("score").textContent = "the score is " + score;
 document.getElementById("mode").textContent = "the mode is:" + mode;
