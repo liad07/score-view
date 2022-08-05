@@ -9,7 +9,9 @@ fetch(from)
     })
     .then(function(responseText) {
         var parsedResponse = (new window.DOMParser()).parseFromString(responseText, "text/html");
-        console.log(parsedResponse.head.getElementsByTagName("link")[0].href.replace(window.location.origin,from))
+        var link=parsedResponse.head.getElementsByTagName("link")[0].href.replace(window.location.origin,from)
+        link=link.replace("/score-view/","")
+        console.log(link)
         document.title=parsedResponse.title
     });
 console.log(score)
